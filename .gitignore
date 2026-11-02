@@ -1,0 +1,24 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Environment variables (never commit; injected from GitHub secrets at build time)
+.env
+.env.*
+!.env.example
+
+# Private module materials and AI agent guidance (this repository is public)
+Module_Vault_Import/
+AGENTS.md
+MODULE-16-WORK-LOG.md
+
+# Submission Summary is submitted through the platform, never committed
+submission-summary.*
+
+# Logs and editor/OS files
+*.log
+npm-debug.log*
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
