@@ -86,6 +86,7 @@ Each specification is written immediately before its feature is built. Add a row
 | 1 | Setup & Deploy | [`ai/features/setup-deploy.feature.md`](features/setup-deploy.feature.md) | Done |
 | 2 | Project Layout | [`ai/features/header-footer.feature.md`](features/header-footer.feature.md) | Built (on `dev`) |
 | 3 | Home Page | [`ai/features/home-page.feature.md`](features/home-page.feature.md) | Built |
+| 5 | Links Page | [`ai/features/link-page.feature.md`](features/link-page.feature.md) | Built (YouTube URL and images pending) |
 
 Planned order: `setup-deploy` → `header-footer` → `home-page` → `portfolio-page` → `link-page` → `contact-page` → `login-page` → `back-office`. Extra miles: `light-dark-mode`, `languages`.
 

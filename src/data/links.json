@@ -1,0 +1,26 @@
+{
+  "intro": "Where to find me online: my code, my professional profile, and my videos.",
+  "links": [
+    {
+      "title": "GitHub",
+      "url": "https://github.com/Driss0624",
+      "image": "github",
+      "imageAlt": "Illustration of code branches and commits flowing between laptops, in navy and cyan",
+      "description": "My code lives here, including this portfolio and my CodeBoxx coursework. It shows how I structure projects, branches, and commits."
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/driss-el-hail-9a21ba423",
+      "image": "linkedin",
+      "imageAlt": "Illustration of a professional profile card connected to a network of people, in navy and cyan",
+      "description": "My professional profile, with my CodeBoxx training, experience, and skills. Connect with me here."
+    },
+    {
+      "title": "YouTube",
+      "url": "",
+      "image": "youtube",
+      "imageAlt": "Illustration of a video player showing a developer presenting code, in navy and cyan",
+      "description": "My elevator pitch and technical videos, where I explain how my projects and solutions work."
+    }
+  ]
+}
