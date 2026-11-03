@@ -181,11 +181,11 @@ The checklist's command is `npm create vite@latest username.github.io`. Running 
 - [x] `.github/workflows/deploy.yml` matches §7 (trigger, `npm ci`, build, both secrets via `env:`, `dist/` artifact, deploy job).
 - [x] The Supabase project matches `ai-spec.md` §6, including sign-ups disabled.
 
-### Deployed (deferred while the repository is private)
+### Deployed (verified 2026-11-03, Actions run 41584748524)
 
-- [ ] Pages source is GitHub Actions and both secrets exist.
-- [ ] A push to `main` starts the workflow, and both jobs succeed.
-- [ ] `https://driss0624.github.io` loads the app; every route works and survives a refresh.
+- [x] Pages source is GitHub Actions and both secrets exist.
+- [x] A push to `main` starts the workflow, and both jobs succeed.
+- [x] `https://driss0624.github.io` loads the app; every route works and survives a refresh.
 
 ### Evidence categories
 

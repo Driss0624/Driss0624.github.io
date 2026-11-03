@@ -30,9 +30,13 @@ There is no custom server. The browser talks to Supabase directly, and row-level
 │   └── features/                  # One specification per feature
 ├── public/                        # Files served as-is (favicon)
 ├── src/
+│   ├── assets/images/             # AI-generated logo and images
+│   ├── components/layout/         # MainLayout, Header (with mobile nav), Footer
+│   ├── data/                      # Static content as JSON (contact details, ...)
 │   ├── lib/supabaseClient.js      # The only Supabase client
 │   ├── pages/                     # One component per route
-│   ├── App.jsx                    # Route table
+│   ├── styles/tokens.css          # Shared colors, spacing, and font
+│   ├── App.jsx                    # Route table, wrapped in MainLayout
 │   ├── main.jsx                   # Entry point; wraps the app in HashRouter
 │   └── index.css                  # Base styles
 ├── .env.example                   # Names of the required environment variables
@@ -116,4 +120,5 @@ The site has no API of its own. It uses the Supabase client library against one 
 **Driss Elhail**
 
 - GitHub: [Driss0624](https://github.com/Driss0624)
-- LinkedIn: *(in progress: profile link and a summary of the profile updates)*
+- Email: [drisselhail08@gmail.com](mailto:drisselhail08@gmail.com)
+- LinkedIn: [driss-el-hail-9a21ba423](https://www.linkedin.com/in/driss-el-hail-9a21ba423) *(in progress: summary of the profile updates)*
