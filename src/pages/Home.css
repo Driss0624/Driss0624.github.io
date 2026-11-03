@@ -1,0 +1,96 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.home-section {
+  padding: var(--space-5);
+  border-radius: var(--radius);
+}
+
+.home-section--alt {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.home-section__title {
+  margin: 0 0 var(--space-4);
+  font-size: 1.75rem;
+}
+
+/* Introduction */
+
+.home-intro {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  gap: var(--space-5);
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.home-intro__name {
+  margin: 0;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+}
+
+.home-intro__tagline {
+  margin: var(--space-2) 0 var(--space-4);
+  color: var(--color-accent);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.home-intro__paragraph {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+}
+
+.home-figure {
+  margin: 0;
+}
+
+.home-figure img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+/* Soft skills with an image beside the cards */
+
+.home-soft {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+  gap: var(--space-4);
+}
+
+.home-soft .skill-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .home {
+    gap: var(--space-4);
+  }
+
+  .home-section {
+    padding: var(--space-4);
+  }
+
+  .home-intro,
+  .home-soft {
+    grid-template-columns: 1fr;
+  }
+
+  .home-intro {
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+  }
+
+  .home-soft .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}

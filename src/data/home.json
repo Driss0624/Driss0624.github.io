@@ -1,0 +1,51 @@
+{
+  "intro": {
+    "name": "Driss Elhail",
+    "tagline": "Full-Stack Developer",
+    "paragraph": "I'm a full-stack developer training at CodeBoxx, building web applications from the database to the interface. I helped build CodeBloggs, a team MERN application, and built this portfolio with React, Supabase, and GitHub Actions. I like turning messy problems into clean, working features, and I'm looking for my first developer role where I can keep learning and ship real work."
+  },
+  "technicalSkills": [
+    {
+      "name": "JavaScript & React",
+      "icon": "react",
+      "description": "Building interactive interfaces with components, hooks, and client-side routing, including this site and the CodeBloggs front end."
+    },
+    {
+      "name": "Node.js & Express",
+      "icon": "node",
+      "description": "Designing REST APIs with routing, validation, and authentication, as in the CodeBloggs back end."
+    },
+    {
+      "name": "Databases",
+      "icon": "database",
+      "description": "Modeling and querying data in MongoDB and PostgreSQL, and securing it with Supabase row-level security."
+    },
+    {
+      "name": "Git & GitHub",
+      "icon": "git",
+      "description": "Working in feature branches, reviewing changes, and automating builds and deploys with GitHub Actions."
+    }
+  ],
+  "softSkills": [
+    {
+      "name": "Problem solving",
+      "icon": "puzzle",
+      "description": "Breaking hard problems into small steps, sharpened through regular LeetCode practice."
+    },
+    {
+      "name": "Teamwork",
+      "icon": "team",
+      "description": "Sharing work across a team through clear tasks, branches, and code reviews on CodeBloggs."
+    },
+    {
+      "name": "Communication",
+      "icon": "chat",
+      "description": "Explaining technical work clearly in demos, documentation, and elevator pitches."
+    },
+    {
+      "name": "Fast learner",
+      "icon": "bolt",
+      "description": "Picking up new tools quickly at bootcamp pace, from Express to Supabase."
+    }
+  ]
+}
