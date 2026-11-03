@@ -191,7 +191,7 @@ npm run build          # outputs dist/
 | `@supabase/supabase-js` | Auth and the `messages` table |
 | `react-icons` | Skill and navigation icons |
 | Custom CSS (plain CSS files, CSS custom properties) | All styling |
-| ESLint (Vite default config) | Linting |
+| oxlint (Vite default config, `.oxlintrc.json`) | Linting |
 | GitHub Actions + GitHub Pages | CI/CD and hosting |
 | AI image tools | Logo and page images, each documented |
 
@@ -284,7 +284,7 @@ RLS is **enabled** on `messages`, with exactly these policies:
 
 ### Formatting
 
-- Follow the Vite ESLint configuration; `npm run lint` passes with no errors.
+- Follow the Vite oxlint configuration (`.oxlintrc.json`); `npm run lint` passes with no errors.
 - Consistent two-space indentation and semicolons, matching the scaffolded files.
 
 ---

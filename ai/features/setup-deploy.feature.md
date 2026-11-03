@@ -97,7 +97,7 @@ The checklist's command is `npm create vite@latest username.github.io`. Running 
 | File / setting | Change |
 | --- | --- |
 | `package.json`, `package-lock.json` | Created by the scaffold; dependencies added by `npm install` |
-| `index.html`, `eslint.config.js`, `public/`, `src/` | Created by the scaffold |
+| `index.html`, `.oxlintrc.json`, `public/`, `src/` | Created by the scaffold (current Vite uses oxlint, not ESLint) |
 | `vite.config.js` | Created by the scaffold; add `base: '/'` |
 | `src/main.jsx` | Wrap `<App />` in `<HashRouter>` |
 | `src/App.jsx` | Route table from `ai-spec.md` §4 |
@@ -200,6 +200,7 @@ Static inspection · lint and build · local browser · GitHub Actions run · de
   - Scaffolding with `.` in the existing repository instead of creating a new `username.github.io` folder. The result is identical and keeps the private files in place.
   - Node LTS in the workflow; local development uses Node 24.
   - `workflow_dispatch` is added so a failed deployment can be rerun without a new commit.
+  - The scaffold was generated in a temporary folder and copied in without overwriting existing files. The output is identical to `npm create vite@latest .` and avoids the non-empty-folder prompt.
 - **Open questions:**
   - Who sets the repository secrets and the Pages source: you in GitHub settings, or the agent through the GitHub CLI with your approval? *Recommended: the agent, after you approve; you paste the values only into your local `.env`.*
   - Do you already have a Supabase account and project? *Needed for SETUP-TASK-08.*
