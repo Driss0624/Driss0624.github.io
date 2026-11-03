@@ -83,7 +83,7 @@ Each specification is written immediately before its feature is built. Add a row
 
 | # | Feature | Specification | Status |
 | --- | --- | --- | --- |
-| 1 | Setup & Deploy | [`ai/features/setup-deploy.feature.md`](features/setup-deploy.feature.md) | Specified |
+| 1 | Setup & Deploy | [`ai/features/setup-deploy.feature.md`](features/setup-deploy.feature.md) | Built (deployed checks pending) |
 
 Planned order: `setup-deploy` → `header-footer` → `home-page` → `portfolio-page` → `link-page` → `contact-page` → `login-page` → `back-office`. Extra miles: `light-dark-mode`, `languages`.
 

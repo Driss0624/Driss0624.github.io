@@ -149,7 +149,7 @@ The checklist's command is `npm create vite@latest username.github.io`. Running 
 | SETUP-TASK-05 | Create `.env.example`; confirm `.env` is ignored | FR-09 |
 | SETUP-TASK-06 | Create `src/lib/supabaseClient.js` with the flag and graceful fallback | FR-10, FR-11 |
 | SETUP-TASK-07 | Create `.github/workflows/deploy.yml` | FR-06, FR-07 |
-| SETUP-TASK-08 | Set up Supabase per `ai-spec.md` §6 (done by Driss in the dashboard) | FR-12 |
+| SETUP-TASK-08 | Set up Supabase per `ai-spec.md` §6 (agent in the dashboard with approval; Driss creates the admin user and fills `.env`) | FR-12 |
 | SETUP-TASK-09 | Add the two repository secrets and set Pages to GitHub Actions (done by Driss, or by the agent with approval) | FR-07, FR-08 |
 | SETUP-TASK-10 | Verify locally with and without `.env`; record evidence | FR-02, FR-05, FR-11 |
 | SETUP-TASK-11 | After an approved merge to `main` and a public repository: confirm the workflow run and the live site | FR-05, FR-06, FR-08 |
@@ -170,16 +170,16 @@ The checklist's command is `npm create vite@latest username.github.io`. Running 
 
 ### Local (required before merging into `dev`)
 
-- [ ] `AGENTS.md`, `Module_Vault_Import/`, `.gitignore`, and `ai/` are unchanged after the scaffold.
-- [ ] `npm run lint` passes with no errors.
-- [ ] `npm run build` succeeds and creates `dist/`.
-- [ ] `npm run preview`: each of `#/`, `#/portfolio`, `#/links`, `#/contact`, `#/login`, `#/backoffice` shows its placeholder; `#/unknown` redirects to Home.
-- [ ] The browser path stays `/` on every route, and refreshing any route reloads the same page.
-- [ ] With a filled `.env`, `isSupabaseConfigured` is `true`.
-- [ ] With no `.env`, the app still renders every route with no uncaught error.
-- [ ] `git status` shows no `.env`, `dist/`, or `node_modules/`; no credential appears in any tracked file.
-- [ ] `.github/workflows/deploy.yml` matches §7 (trigger, `npm ci`, build, both secrets via `env:`, `dist/` artifact, deploy job).
-- [ ] The Supabase project matches `ai-spec.md` §6, including sign-ups disabled.
+- [x] `AGENTS.md`, `Module_Vault_Import/`, `.gitignore`, and `ai/` are unchanged after the scaffold.
+- [x] `npm run lint` passes with no errors.
+- [x] `npm run build` succeeds and creates `dist/`.
+- [x] `npm run preview`: each of `#/`, `#/portfolio`, `#/links`, `#/contact`, `#/login`, `#/backoffice` shows its placeholder; `#/unknown` redirects to Home.
+- [x] The browser path stays `/` on every route, and refreshing any route reloads the same page.
+- [x] With a filled `.env`, `isSupabaseConfigured` is `true`.
+- [x] With no `.env`, the app still renders every route with no uncaught error.
+- [x] `git status` shows no `.env`, `dist/`, or `node_modules/`; no credential appears in any tracked file.
+- [x] `.github/workflows/deploy.yml` matches §7 (trigger, `npm ci`, build, both secrets via `env:`, `dist/` artifact, deploy job).
+- [x] The Supabase project matches `ai-spec.md` §6, including sign-ups disabled.
 
 ### Deployed (deferred while the repository is private)
 
@@ -202,8 +202,8 @@ Static inspection · lint and build · local browser · GitHub Actions run · de
   - `workflow_dispatch` is added so a failed deployment can be rerun without a new commit.
   - The scaffold was generated in a temporary folder and copied in without overwriting existing files. The output is identical to `npm create vite@latest .` and avoids the non-empty-folder prompt.
 - **Open questions:**
-  - Who sets the repository secrets and the Pages source: you in GitHub settings, or the agent through the GitHub CLI with your approval? *Recommended: the agent, after you approve; you paste the values only into your local `.env`.*
-  - Do you already have a Supabase account and project? *Needed for SETUP-TASK-08.*
+  - Resolved: Supabase project `Driss0624's Portfolio` exists and matches `ai-spec.md` §6 (verified 2026-11-02).
+  - Resolved: Driss sets the repository secrets from the local `.env` (`gh secret set -f .env`); the agent sets the Pages source with approval. The agent never handles key values.
 - **Source conflicts:** repository visibility is still open (`ai-spec.md` §2). It blocks only the deployed checks.
 - **Spec gaps:** none.
 - **Out-of-scope observations:** a favicon and page `<title>` would help the portfolio's polish; they belong to `header-footer.feature.md`.
