@@ -106,11 +106,11 @@ When this feature is done:
 | --- | --- | --- | --- |
 | GitHub | `https://github.com/Driss0624` | `github` | My code lives here, including this portfolio and my CodeBoxx coursework. It shows how I structure projects, branches, and commits. |
 | LinkedIn | `https://www.linkedin.com/in/driss-el-hail-9a21ba423` | `linkedin` | My professional profile, with my CodeBoxx training, experience, and skills. Connect with me here. |
-| YouTube | *Needed from Driss* | `youtube` | My elevator pitch and technical videos, where I explain how my projects and solutions work. |
+| YouTube | https://www.youtube.com/@DrissElCode | `youtube` | My elevator pitch and technical videos, where I explain how my projects and solutions work. |
 
 The card shows the URL without `https://` (for example `github.com/Driss0624`) under the description.
 
-A link whose `url` is still empty (YouTube, until Driss sends it) is left off the page rather than shown with a placeholder. FR-03 is met only once all three are visible.
+A link whose `url` is empty is left off the page rather than shown with a placeholder. All three links have URLs, so FR-03 is met.
 
 ### AI images
 
@@ -120,7 +120,7 @@ A link whose `url` is still empty (YouTube, until Driss sends it) is left off th
 | `links-linkedin.webp` | LinkedIn | Illustration of a professional profile card connected to a network of people, in navy and cyan | "Flat vector illustration of a professional profile card linked to a network of people icons, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
 | `links-youtube.webp` | YouTube | Illustration of a video player showing a developer presenting code, in navy and cyan | "Flat vector illustration of a video player with a developer presenting code on screen, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
 
-Generating tool: **ChatGPT** image generation, noted in a comment in `Links.jsx`. Landscape (about 16:9), WebP, under 150 KB each. The prompts avoid brand logos so the images stay original.
+Generating tool: **ChatGPT** image generation, noted in a comment in `Links.jsx`. Landscape 16:9 (1280×720), WebP, under 150 KB each. The prompts avoid brand logos so the images stay original.
 
 ### Card behavior
 
@@ -163,15 +163,15 @@ Generating tool: **ChatGPT** image generation, noted in a comment in `Links.jsx`
 
 - [x] `links.json` holds all text and URLs; `Links.jsx` contains no hard-coded links.
 - [x] Every description is 1–3 sentences.
-- [ ] Every image has `alt` text; the tool is named in `Links.jsx` and in this spec. *(`alt` text and tool comment are in place; waiting on the image files.)*
+- [x] Every image has `alt` text; the tool is named in `Links.jsx` and in this spec.
 - [x] `npm run lint` passes; `npm run build` succeeds; `git diff --check` is clean.
 
 ### Local browser — desktop (> 768px)
 
 - [x] `#/links` shows the page inside the layout; the Links nav link is active.
 - [x] Exactly one `<h1>`; each card has a title, description, and URL.
-- [ ] Three cards, each with its image *(waiting on the YouTube URL and the image files)*.
-- [x] Each card opens the right URL in a new tab (`target="_blank"`, `rel="noreferrer"`, "opens in a new tab" label). *(GitHub and LinkedIn checked; YouTube pending.)*
+- [x] Three cards, each with its image.
+- [x] Each card opens the right URL in a new tab (`target="_blank"`, `rel="noreferrer"`, "opens in a new tab" label).
 
 ### Local browser — mobile (768px, 375px, 320px)
 
@@ -193,8 +193,8 @@ Generating tool: **ChatGPT** image generation, noted in a comment in `Links.jsx`
   - Each card gets its own AI thumbnail, which covers the "image per link" and "at least one AI image" lines together. Alternative: one AI banner for the page, with icon tiles as card images.
   - The descriptions are drafts. Driss must confirm they are accurate (for example, that his GitHub shows his CodeBoxx coursework).
 - **Open questions:**
-  - Driss: send the YouTube channel URL. The channel must exist before the page ships; it will hold the pitch and demo videos.
-  - Driss: generate the three images with the prompts above.
+  - Driss: send the YouTube channel URL. *(Done 2026-11-03.)*
+  - Driss: generate the three images with the prompts above. *(Done 2026-11-03.)*
 - **Source conflicts:** the checklist's first line says two images "into the Portfolio page"; the bullet and the business document say at least one on the Links page. Decided: at least one (`ai-spec.md` §2). This page has three.
 - **Spec gaps:** none.
 - **Out-of-scope observations:** a LeetCode profile card could be added later; it is not required.
