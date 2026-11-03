@@ -1,0 +1,31 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.links-header {
+  padding: var(--space-6) var(--space-5) 0;
+}
+
+.links-header__title {
+  margin: 0;
+  font-size: clamp(2.25rem, 6vw, 3rem);
+}
+
+.links-header__intro {
+  max-width: 60ch;
+  margin: var(--space-2) 0 0;
+  color: var(--color-muted);
+  font-size: 1.0625rem;
+}
+
+@media (max-width: 768px) {
+  .links {
+    gap: var(--space-4);
+  }
+
+  .links-header {
+    padding: var(--space-4) var(--space-4) 0;
+  }
+}
