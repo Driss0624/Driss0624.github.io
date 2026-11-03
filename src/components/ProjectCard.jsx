@@ -12,8 +12,8 @@ function ProjectCard({ name, image, imageAlt, tech = [], description, link, link
           className="project-card__image"
           src={imageSrc}
           alt={imageAlt}
-          width="1536"
-          height="864"
+          width="1280"
+          height="720"
           loading="lazy"
         />
       )}

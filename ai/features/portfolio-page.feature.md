@@ -150,7 +150,7 @@ A project without a `link` renders without a link rather than an empty or broken
 | `portfolio-codebloggs.webp` | CodeBloggs card | Illustration of a developer blogging platform with posts, comments, and likes, in navy and cyan | "Flat vector illustration of a social blogging app for developers: post cards, comment bubbles, heart icons, dark navy background, cyan accents, minimal, no text, 16:9" |
 | `portfolio-site.webp` | Portfolio card | Illustration of a personal portfolio website on a laptop and phone, in navy and cyan | "Flat vector illustration of a personal portfolio website shown on a laptop and a phone, dark navy background, cyan accents, minimal, no text, 16:9" |
 
-Generating tool: **ChatGPT** image generation (same as Home), noted in a comment in `Portfolio.jsx`. Images are landscape (about 16:9), WebP, under 150 KB each.
+Generating tool: **ChatGPT** image generation (same as Home), noted in a comment in `Portfolio.jsx`. Images are landscape 16:9 (1280×720), WebP, under 150 KB each.
 
 ### Résumé button
 
@@ -199,7 +199,7 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
 
 - [x] `portfolio.json` holds all text; `Portfolio.jsx` contains no hard-coded entries.
 - [x] Education and Work arrays are stored most recent first.
-- [ ] Both images have `alt` text; the tool is named in `Portfolio.jsx` and in this spec. *(`alt` text and tool comment are in place; waiting on the image files.)*
+- [x] Both images have `alt` text; the tool is named in `Portfolio.jsx` and in this spec.
 - [x] `npm run lint` passes; `npm run build` succeeds; `git diff --check` is clean.
 - [ ] `npm run build` copies `resume.pdf` into `dist/` *(waiting on the PDF)*.
 
@@ -208,7 +208,7 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
 - [x] `#/portfolio` shows the page inside the layout; the Portfolio nav link is active.
 - [x] Exactly one `<h1>`; Education, Work, and Projects are visibly separated.
 - [x] Each project card shows its name, tech, and description; the portfolio card's GitHub link opens in a new tab.
-- [ ] Each project card shows its image *(waiting on the image files)*.
+- [x] Each project card shows its image.
 - [ ] The résumé button downloads a valid PDF. *(Button and link are in place; waiting on the PDF.)*
 
 ### Local browser — mobile (768px, 375px, 320px)
@@ -239,7 +239,7 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
   - The CodeBloggs and portfolio descriptions are drafts written from the project READMEs. Driss must confirm they are accurate.
 - **Open questions:**
   - Driss: confirm or edit the CodeBoxx program name and location, and the project descriptions.
-  - Driss: generate the two images with the prompts above.
+  - Driss: generate the two images with the prompts above. *(Done 2026-11-03.)*
   - Driss: supply the final résumé PDF. It should add the dates, CodeBoxx, and the two projects so it matches this page.
 - **Source conflicts:** none.
 - **Spec gaps:** none.
