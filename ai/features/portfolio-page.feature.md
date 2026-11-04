@@ -32,7 +32,6 @@ When this feature is done:
 
 ### Out of scope
 
-- Writing the final résumé PDF itself (Driss supplies it; see Needs review).
 - Header, footer, navigation, and tokens (Project Layout).
 - Skills (already on Home), external links (Links page), and the contact form.
 - Filtering, sorting controls, modals, or animations.
@@ -58,7 +57,7 @@ When this feature is done:
 | Education: CodeBoxx (Jul 2026 – Nov 2026, expected), then Lennard High School (2026) | Driss, 2026-11-03; résumé |
 | Work: Cook, Tropical Smoothie Café, Ruskin, FL, 2025 – 2026 | Driss, 2026-11-03; résumé |
 | Projects: CodeBloggs and this portfolio | Driss, 2026-11-03 |
-| Résumé: Driss makes the final PDF; it is served from `public/resume.pdf` | Driss, 2026-11-03 |
+| Résumé: the final PDF, reviewed and confirmed by Driss, is served from `public/resume.pdf` | Driss, 2026-11-04 |
 | Three sections with alternating backgrounds, matching Home | Checklist "Layout"; Home page pattern |
 
 ---
@@ -102,7 +101,7 @@ When this feature is done:
 | `src/data/portfolio.json` | New. Intro sentence, education, work, projects |
 | `src/assets/images/portfolio-codebloggs.webp` | New. AI image for the CodeBloggs card (supplied by Driss) |
 | `src/assets/images/portfolio-site.webp` | New. AI image for the portfolio card (supplied by Driss) |
-| `public/resume.pdf` | New. Final résumé (supplied by Driss) |
+| `public/resume.pdf` | New. Final résumé (drafted with Claude, confirmed by Driss) |
 
 **Routes:** unchanged. **Supabase:** not touched. **Shared components:** none changed.
 
@@ -118,7 +117,7 @@ When this feature is done:
 
 | Institution | Program | Location | Dates | Detail (draft) |
 | --- | --- | --- | --- | --- |
-| CodeBoxx | Full-Stack Developer Program | Remote | Jul 2026 – Nov 2026 (expected) | Intensive bootcamp in JavaScript, React, Node.js and Express, MongoDB, PostgreSQL, Git, and DevOps, through team and individual projects. |
+| CodeBoxx | Full-Stack Developer Program | Hybrid | Jul 2026 – Nov 2026 (expected) | Intensive bootcamp in JavaScript, React, Node.js and Express, MongoDB, PostgreSQL, Git, and DevOps, through team and individual projects. |
 | Lennard High School | High School Diploma, Honors | Ruskin, FL | 2026 | Honors student, GPA 4.5. |
 
 ### Work (`portfolio.json` → `work`, most recent first)
@@ -155,7 +154,6 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
 ### Résumé button
 
 - `<a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Driss-Elhail-Resume.pdf">` styled as a button, with a `FaFileDownload` icon (`aria-hidden`) and the text "Download résumé (PDF)".
-- Until Driss supplies `public/resume.pdf`, the link returns 404; FR-08 stays unchecked until the file is added.
 
 ### Behavior by viewport
 
@@ -176,7 +174,7 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
 | PORT-TASK-04 | Build `Portfolio.jsx`: header, button, three sections | FR-01, FR-02, FR-09 |
 | PORT-TASK-05 | Add the two AI images with `alt` text and the tool comment | FR-10 |
 | PORT-TASK-06 | Write `Portfolio.css`: separation, header layout, grid, stacking | FR-09, FR-11 |
-| PORT-TASK-07 | Add `public/resume.pdf` when Driss supplies it; test the download | FR-08 |
+| PORT-TASK-07 | Add `public/resume.pdf`; test the download | FR-08 |
 | PORT-TASK-08 | Verify at desktop, 768px, 375px, and 320px; record evidence | All |
 
 ### Traceability (checklist → requirement → task)
@@ -201,7 +199,7 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
 - [x] Education and Work arrays are stored most recent first.
 - [x] Both images have `alt` text; the tool is named in `Portfolio.jsx` and in this spec.
 - [x] `npm run lint` passes; `npm run build` succeeds; `git diff --check` is clean.
-- [ ] `npm run build` copies `resume.pdf` into `dist/` *(waiting on the PDF)*.
+- [x] `npm run build` copies `resume.pdf` into `dist/`.
 
 ### Local browser — desktop (> 768px)
 
@@ -209,7 +207,7 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
 - [x] Exactly one `<h1>`; Education, Work, and Projects are visibly separated.
 - [x] Each project card shows its name, tech, and description; the portfolio card's GitHub link opens in a new tab.
 - [x] Each project card shows its image.
-- [ ] The résumé button downloads a valid PDF. *(Button and link are in place; waiting on the PDF.)*
+- [x] The résumé button links to a valid PDF, with the save name `Driss-Elhail-Resume.pdf`.
 
 ### Local browser — mobile (768px, 375px, 320px)
 
@@ -234,7 +232,7 @@ Generating tool: **ChatGPT** image generation (same as Home), noted in a comment
   - AI-Generated Images → FR-10
 - **Assumptions:**
   - The project images are AI illustrations, not screenshots, because CodeBloggs is in a private repository and its wireframes belong to CodeBoxx. They also cover the two required AI images. Alternative: real screenshots for the projects plus two separate AI images.
-  - The CodeBoxx program name is "Full-Stack Developer Program" and its location is "Remote". Driss must confirm both.
+  - The CodeBoxx program name is "Full-Stack Developer Program" and its location is "Hybrid", confirmed by Driss on 2026-11-04.
   - The Tropical Smoothie dates are shown as "2025 – 2026" (the job has ended). If Driss still works there, this becomes "2025 – Present".
   - The CodeBloggs and portfolio descriptions are drafts written from the project READMEs. Driss must confirm they are accurate.
 - **Open questions:**
