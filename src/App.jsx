@@ -6,6 +6,7 @@ import Links from './pages/Links.jsx'
 import Contact from './pages/Contact.jsx'
 import Login from './pages/Login.jsx'
 import BackOffice from './pages/BackOffice.jsx'
+import ProtectedRoute from './components/ProtectedRoute.jsx'
 
 function App() {
   return (
@@ -18,7 +19,14 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         {/* Hidden routes: never linked from public navigation. */}
         <Route path="/login" element={<Login />} />
-        <Route path="/backoffice" element={<BackOffice />} />
+        <Route
+          path="/backoffice"
+          element={
+            <ProtectedRoute>
+              <BackOffice />
+            </ProtectedRoute>
+          }
+        />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
