@@ -86,7 +86,7 @@ Each specification is written immediately before its feature is built. Add a row
 | 1 | Setup & Deploy | [`ai/features/setup-deploy.feature.md`](features/setup-deploy.feature.md) | Done |
 | 2 | Project Layout | [`ai/features/header-footer.feature.md`](features/header-footer.feature.md) | Built (on `dev`) |
 | 3 | Home Page | [`ai/features/home-page.feature.md`](features/home-page.feature.md) | Built |
-| 4 | Portfolio Page | [`ai/features/portfolio-page.feature.md`](features/portfolio-page.feature.md) | Built (résumé PDF pending) |
+| 4 | Portfolio Page | [`ai/features/portfolio-page.feature.md`](features/portfolio-page.feature.md) | Built |
 | 5 | Links Page | [`ai/features/link-page.feature.md`](features/link-page.feature.md) | Built |
 | 6 | Contact Page | [`ai/features/contact-page.feature.md`](features/contact-page.feature.md) | Built |
 | 7 | Login Page | [`ai/features/login-page.feature.md`](features/login-page.feature.md) | Built |
