@@ -1,0 +1,14 @@
+{
+  "title": "Admin login",
+  "intro": "This area is for the site owner.",
+  "labels": {
+    "email": "Email",
+    "password": "Password"
+  },
+  "submit": "Log in",
+  "submitting": "Logging in…",
+  "required": "Please enter your email and password.",
+  "invalid": "Invalid login credentials",
+  "failure": "Something went wrong. Please try again.",
+  "unavailable": "Sign-in is unavailable right now."
+}
