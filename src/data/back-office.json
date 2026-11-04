@@ -1,0 +1,37 @@
+{
+  "title": "Back Office",
+  "intro": "Messages sent through your contact form.",
+  "logout": "Log out",
+  "loggingOut": "Logging out…",
+  "logoutFailed": "Could not log out. Please try again.",
+  "columns": {
+    "name": "Name",
+    "email": "Email",
+    "date": "Date",
+    "actions": "Actions"
+  },
+  "tableLabel": "Contact messages",
+  "loading": "Loading messages…",
+  "loadFailed": "Could not load messages.",
+  "retry": "Try again",
+  "empty": "No messages yet",
+  "view": "View",
+  "viewLabel": "View message from {name}",
+  "delete": "Delete",
+  "deleteLabel": "Delete message from {name}",
+  "confirmDelete": "Delete this message? This cannot be undone.",
+  "confirm": "Confirm",
+  "confirmLabel": "Confirm deleting message from {name}",
+  "cancel": "Cancel",
+  "cancelLabel": "Cancel deleting message from {name}",
+  "deleted": "Message deleted.",
+  "deleteFailed": "Could not delete the message. Please try again.",
+  "modal": {
+    "title": "Message details",
+    "from": "From",
+    "email": "Email",
+    "date": "Date",
+    "message": "Message",
+    "close": "Close"
+  }
+}

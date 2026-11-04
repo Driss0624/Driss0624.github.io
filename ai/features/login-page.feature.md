@@ -1,6 +1,6 @@
 # Feature Specification — Login Page
 
-*Feature 7 of 8 · Branch: `feature/module-16-login-page` · Must be used with `ai/ai-spec.md` (§4 Routes, §6 Supabase) and `ai/features/header-footer.feature.md` · Last updated: 2026-11-03*
+*Feature 7 of 8 · Branch: `feature/module-16-login-page` · Must be used with `ai/ai-spec.md` (§4 Routes, §6 Supabase) and `ai/features/header-footer.feature.md` · Last updated: 2026-11-04*
 
 ---
 
@@ -31,9 +31,8 @@ When this feature is done:
 
 - The Back Office page, the check that blocks signed-out visitors from it, and the logout button (`back-office.feature.md`).
 - A sign-up, forgot-password, or "remember me" flow.
-- A secret keyboard shortcut (see §4).
 - Any change to Supabase: the admin user, Auth settings, the `messages` table, or its RLS policies.
-- Any change to the navigation, the shared layout, or the Contact form.
+- Any change to the navigation or the Contact form. The shared layout changes only to add the key press (LOGIN-FR-15).
 - New dependencies.
 
 ---
@@ -54,7 +53,7 @@ When this feature is done:
 | Decision | Source |
 | --- | --- |
 | The route is `/login` (`#/login`), already registered in `App.jsx` as a hidden route inside `MainLayout` | `ai-spec.md` §4; Project Layout |
-| The page is reached by typing the URL only. The checklist allows the URL **or** a secret key press, so one is enough and no key press is added | `ai-spec.md` §4 ("Typed URL only"); checklist "Secret Login Route" |
+| The page is reached by typing the URL or by pressing Ctrl+Shift+L. The key press was added at Driss's request on 2026-11-04 and is not shown anywhere on the site | `ai-spec.md` §4; checklist "Secret Login Route" |
 | The admin account already exists, and sign-ups are disabled | `ai-spec.md` §6; `setup-deploy.feature.md` |
 | Sessions persist through the Supabase client's default browser storage; no custom session code | Checklist "Login Success / Failure"; Supabase client defaults |
 
@@ -78,6 +77,7 @@ When this feature is done:
 | LOGIN-FR-12 | When Supabase is not configured, a notice replaces the form and the page does not crash. |
 | LOGIN-FR-13 | The layout works from 320px up; at 768px or narrower the form takes the full width. |
 | LOGIN-FR-14 | All visible text lives in `src/data/login-page.json`. |
+| LOGIN-FR-15 | Pressing Ctrl+Shift+L on any page opens `#/login`, unless the cursor is in an `<input>` or `<textarea>`, so typing in a form is never interrupted. |
 
 ### User flow (admin)
 
@@ -98,6 +98,7 @@ When this feature is done:
 | `src/components/LoginForm.jsx` | New. Fields, state, session check, sign-in, feedback |
 | `src/components/LoginForm.css` | New. Field, button, and feedback styles |
 | `src/data/login-page.json` | New. Page and form text |
+| `src/components/layout/MainLayout.jsx` | Add the Ctrl+Shift+L listener. It renders nothing, and every page uses this layout |
 | `ai/ai-spec.md` | Add the Login row to the Feature Index |
 
 **Routes:** unchanged. `App.jsx` already registers `/login` and `/backoffice`.
@@ -180,13 +181,14 @@ If the check itself fails, the form is shown as normal.
 | LOGIN-TASK-03 | Build `Login.jsx`, `Login.css`, `LoginForm.css` | FR-01, FR-13 |
 | LOGIN-TASK-04 | Confirm the route is unlinked; add the Feature Index row | FR-02 |
 | LOGIN-TASK-05 | Verify empty submit, wrong credentials, forced failure, and widths; Driss verifies the real sign-in, refresh, and redirect; record evidence | All |
+| LOGIN-TASK-06 | Add the Ctrl+Shift+L listener to `MainLayout.jsx` and verify it | FR-15 |
 
 ### Traceability (checklist → requirement → task)
 
 | Checklist line | Requirement ID | Task ID | Planned file change | Verification method |
 | --- | --- | --- | --- | --- |
 | 🤖🛠️ AI Feature Specification — Login Page | — | — | This file | File exists; listed in Feature Index |
-| 🛠️ Secret Login Route (not in header, footer, or mobile nav; typed URL or secret key press) | FR-01, FR-02 | TASK-03, 04 | `Login.jsx`; no navigation change | Search the rendered links on every page; type the URL |
+| 🛠️ Secret Login Route (not in header, footer, or mobile nav; typed URL or secret key press) | FR-01, FR-02, FR-15 | TASK-03, 04, 06 | `Login.jsx`, `MainLayout.jsx`; no navigation change | Search the rendered links on every page; type the URL; press Ctrl+Shift+L |
 | 🛠️ Login Form Fields (email, password, submit) | FR-03 | TASK-02 | `LoginForm.jsx` | Inspect element types and labels |
 | 🛠️ Supabase Authentication (`signInWithPassword`; shared client; pre-created admin) | FR-05, FR-06 | TASK-02 | `LoginForm.jsx` | Network tab shows `POST /auth/v1/token?grant_type=password`; no second client in the code |
 | 🛠️ Login Success (Back Office; session persists; refresh; existing session redirects) | FR-07, FR-08, FR-09 | TASK-02, 05 | `LoginForm.jsx` | Driss signs in, refreshes, then revisits `#/login` |
@@ -206,6 +208,8 @@ If the check itself fails, the form is shown as normal.
 
 - [x] `#/login` loads by typing the URL, with one `<h1>`.
 - [x] No link to `#/login` exists on any page, at desktop or mobile width.
+- [x] Ctrl+Shift+L opens the login route from a public page.
+- [x] Ctrl+Shift+L does nothing while the cursor is in a form field.
 - [x] Submitting the empty form shows the required message; no request is sent.
 - [x] Made-up credentials return `400` from Supabase and show "Invalid login credentials" in red, with `role="alert"`.
 - [x] After that failure, the email is kept, the password is cleared, and typing hides the message.
@@ -232,7 +236,7 @@ If the check itself fails, the form is shown as normal.
 ## Needs review
 
 - **Checklist coverage:**
-  - Secret Login Route → FR-01, FR-02
+  - Secret Login Route → FR-01, FR-02, FR-15
   - Login Form Fields → FR-03
   - Supabase Authentication → FR-05, FR-06
   - Login Success / Failure → FR-07, FR-08, FR-09, FR-10, FR-11
@@ -245,4 +249,5 @@ If the check itself fails, the form is shown as normal.
 - **Open questions:** none.
 - **Source conflicts:** the admin credentials conflict in `AGENTS.md` does not change this page, because the form takes whatever is typed and the account already exists.
 - **Spec gaps:** none.
-- **Out-of-scope observations:** a secret key press could be added later as a convenience; it is not required.
+- **Out-of-scope observations:** none.
+- **Key press limits:** phones have no keyboard, so the typed URL stays the way in on mobile. The shortcut is visible in this public repository; RLS, not secrecy, protects the data.

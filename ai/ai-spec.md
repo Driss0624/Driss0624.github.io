@@ -90,6 +90,7 @@ Each specification is written immediately before its feature is built. Add a row
 | 5 | Links Page | [`ai/features/link-page.feature.md`](features/link-page.feature.md) | Built |
 | 6 | Contact Page | [`ai/features/contact-page.feature.md`](features/contact-page.feature.md) | Built |
 | 7 | Login Page | [`ai/features/login-page.feature.md`](features/login-page.feature.md) | Built |
+| 8 | Back Office | [`ai/features/back-office.feature.md`](features/back-office.feature.md) | Built |
 
 Planned order: `setup-deploy` → `header-footer` → `home-page` → `portfolio-page` → `link-page` → `contact-page` → `login-page` → `back-office`. Extra miles: `light-dark-mode`, `languages`.
 
@@ -126,7 +127,7 @@ There is no server of our own. The browser talks to Supabase directly; row-level
 | `#/portfolio` | Portfolio | Yes | Public |
 | `#/links` | Links | Yes | Public |
 | `#/contact` | Contact | Yes | Public |
-| `#/login` | Login | **No** | Typed URL only |
+| `#/login` | Login | **No** | Typed URL or secret key press (Ctrl+Shift+L) |
 | `#/backoffice` | Back Office | **No** | Authenticated admin only |
 | any other | Redirect to Home | — | — |
 
