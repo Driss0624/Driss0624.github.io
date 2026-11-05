@@ -5,8 +5,6 @@ A personal portfolio website that presents my skills, education, experience, and
 - **Live site:** https://driss0624.github.io
 - **Module:** CodeBoxx FSD-1616 Professional Development (Module 16)
 
-> This README grows with the project. Sections marked *(in progress)* are completed as each feature is built.
-
 ## Tech Stack
 
 | Area | Technology |
@@ -28,10 +26,11 @@ There is no custom server. The browser talks to Supabase directly, and row-level
 ├── ai/
 │   ├── ai-spec.md                 # Project-wide AI specification
 │   └── features/                  # One specification per feature
-├── public/                        # Files served as-is (favicon)
+├── public/                        # Files served as-is (favicon, resume.pdf)
 ├── src/
 │   ├── assets/images/             # AI-generated logo and images
-│   ├── components/layout/         # MainLayout, Header (with mobile nav), Footer
+│   ├── components/                # Page pieces, ProtectedRoute, message table and modal
+│   │   └── layout/                # MainLayout, Header (with mobile nav), Footer
 │   ├── data/                      # Static content as JSON (contact details, ...)
 │   ├── lib/supabaseClient.js      # The only Supabase client
 │   ├── pages/                     # One component per route
@@ -39,7 +38,9 @@ There is no custom server. The browser talks to Supabase directly, and row-level
 │   ├── App.jsx                    # Route table, wrapped in MainLayout
 │   ├── main.jsx                   # Entry point; wraps the app in HashRouter
 │   └── index.css                  # Base styles
+├── docs/                          # Elevator pitch scripts and feedback
 ├── .env.example                   # Names of the required environment variables
+├── CONCEPTS.md                    # Three challenging concepts from this project
 ├── index.html
 └── vite.config.js                 # base: '/' for the root GitHub Pages site
 ```
@@ -52,7 +53,7 @@ There is no custom server. The browser talks to Supabase directly, and row-level
 | `#/portfolio` | Portfolio | Public |
 | `#/links` | Links | Public |
 | `#/contact` | Contact | Public |
-| `#/login` | Login | Hidden (typed URL only) |
+| `#/login` | Login | Hidden (typed URL or Ctrl+Shift+L) |
 | `#/backoffice` | Back Office | Signed-in admin only |
 
 Any other route redirects to Home. Because the app uses `HashRouter`, the browser path always stays at the domain root and refreshing any page never returns a 404.
@@ -112,8 +113,6 @@ The site has no API of its own. It uses the Supabase client library against one 
 | Sign in | Admin | `auth.signInWithPassword` | Email/password auth |
 | Read messages | Signed-in admin | `select` from `messages` | Select policy for `authenticated` |
 | Delete a message | Signed-in admin | `delete` from `messages` | Delete policy for `authenticated` |
-
-*(in progress: exact calls are documented as the Contact, Login, and Back Office features are built)*
 
 ## Author
 
