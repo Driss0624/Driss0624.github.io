@@ -105,7 +105,7 @@ When this feature is done:
 | Title | URL | Image key | Description (draft) |
 | --- | --- | --- | --- |
 | GitHub | `https://github.com/Driss0624` | `github` | My code lives here, including this portfolio and my CodeBoxx coursework. It shows how I structure projects, branches, and commits. |
-| LinkedIn | `https://www.linkedin.com/in/driss-el-hail-9a21ba423` | `linkedin` | My professional profile, with my CodeBoxx training, experience, and skills. Connect with me here. |
+| LinkedIn | `https://www.linkedin.com/in/drisselhail` | `linkedin` | My professional profile, with my CodeBoxx training, experience, and skills. Connect with me here. |
 | YouTube | https://www.youtube.com/@DrissElCode | `youtube` | My elevator pitch and technical videos, where I explain how my projects and solutions work. |
 
 The card shows the URL without `https://` (for example `github.com/Driss0624`) under the description.

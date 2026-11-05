@@ -134,7 +134,7 @@ No other entries. Both navigations render from this one list, so they cannot dri
 | --- | --- |
 | Email | `drisselhail08@gmail.com` |
 | GitHub | `https://github.com/Driss0624` |
-| LinkedIn | `https://www.linkedin.com/in/driss-el-hail-9a21ba423` |
+| LinkedIn | `https://www.linkedin.com/in/drisselhail` |
 | Copyright | `© <current year> Driss Elhail. All rights reserved.` (year computed at render) |
 
 ### Logo

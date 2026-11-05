@@ -121,4 +121,13 @@ The site has no API of its own. It uses the Supabase client library against one 
 
 - GitHub: [Driss0624](https://github.com/Driss0624)
 - Email: [drisselhail08@gmail.com](mailto:drisselhail08@gmail.com)
-- LinkedIn: [driss-el-hail-9a21ba423](https://www.linkedin.com/in/driss-el-hail-9a21ba423) *(in progress: summary of the profile updates)*
+- LinkedIn: [drisselhail](https://www.linkedin.com/in/drisselhail/)
+
+### LinkedIn Update
+
+For Module 16, I updated my LinkedIn profile to present myself as a junior full-stack developer entering the job market:
+
+- **Headline and About:** named my target role and main technologies, and rewrote the About section with examples from CodeBloggs and this portfolio.
+- **Education and work:** corrected my CodeBoxx and Lennard High School entries, updated my Cook position at Tropical Smoothie Cafe, and removed an inaccurate entry and a duplicate one.
+- **Projects and skills:** added CodeBloggs and this portfolio, added my GitHub and portfolio to Featured, and linked my skills to those projects.
+- **Profile details:** added a custom banner, expanded my job preferences, and replaced the generated address with a custom URL.
