@@ -202,29 +202,29 @@ Values may be tuned to match the logo, but each must keep at least 4.5:1 text co
 
 ### Static inspection, lint, and build
 
-- [ ] `MainLayout`, `Header`, and `Footer` exist in `src/components/layout/`, one component per file.
-- [ ] `App.jsx` wraps every route in `MainLayout`; no page renders its own header or footer.
-- [ ] `navLinks.js` lists exactly Home, Portfolio, Links, Contact; no file links to `/login` or `/backoffice`.
-- [ ] No layout file imports `supabaseClient.js`.
-- [ ] The logo has `alt` text and its generating tool is documented here and in `Header.jsx`.
-- [ ] `npm run lint` passes; `npm run build` succeeds; `git diff --check` is clean.
+- [x] `MainLayout`, `Header`, and `Footer` exist in `src/components/layout/`, one component per file.
+- [x] `App.jsx` wraps every route in `MainLayout`; no page renders its own header or footer.
+- [x] `navLinks.js` lists exactly Home, Portfolio, Links, Contact; no file links to `/login` or `/backoffice`.
+- [x] No layout file imports `supabaseClient.js`.
+- [x] The logo has `alt` text and its generating tool is documented here and in `Header.jsx`.
+- [x] `npm run lint` passes; `npm run build` succeeds; `git diff --check` is clean.
 
 ### Local browser — desktop (> 768px)
 
-- [ ] Every route shows the header at the top and the footer at the bottom.
-- [ ] Links are horizontal; the current page is highlighted and has `aria-current="page"`; Home is not highlighted on other pages.
-- [ ] The header stays visible while scrolling a page taller than the viewport.
-- [ ] Clicking the logo from any route goes to Home; the path stays `/`.
-- [ ] Tab moves through the logo and links in order, with a visible focus ring.
-- [ ] Footer email opens a `mailto:` link; GitHub and LinkedIn open in a new tab.
+- [x] Every route shows the header at the top and the footer at the bottom.
+- [x] Links are horizontal; the current page is highlighted and has `aria-current="page"`; Home is not highlighted on other pages.
+- [x] The header stays visible while scrolling a page taller than the viewport.
+- [x] Clicking the logo from any route goes to Home; the path stays `/`.
+- [x] Tab moves through the logo and links in order, with a visible focus ring.
+- [x] Footer email opens a `mailto:` link; GitHub and LinkedIn open in a new tab.
 
 ### Local browser — mobile (768px, 375px, 320px)
 
-- [ ] Text links are hidden; the bottom icon bar shows four items with icons, labels, and accessible names.
-- [ ] The active item is highlighted.
-- [ ] The last line of page content and the footer are fully visible above the bar.
-- [ ] The logo fits the header; `document.documentElement.scrollWidth` equals the viewport width (no horizontal scroll).
-- [ ] No console errors at any width.
+- [x] Text links are hidden; the bottom icon bar shows four items with icons, labels, and accessible names.
+- [x] The active item is highlighted.
+- [x] The last line of page content and the footer are fully visible above the bar.
+- [x] The logo fits the header; `document.documentElement.scrollWidth` equals the viewport width (no horizontal scroll).
+- [x] No console errors at any width.
 
 ### Deployed (after merge to `main`)
 
