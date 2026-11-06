@@ -151,8 +151,8 @@ An unknown key renders the card without an icon rather than crashing.
 
 | File | Section | `alt` (draft) | Suggested prompt |
 | --- | --- | --- | --- |
-| `home-hero.webp` | Introduction | Illustration of a developer's desk with code on a laptop screen, in navy and cyan | "Flat vector illustration of a modern developer workspace, laptop showing code, dark navy background, cyan accents, minimal, no text" |
-| `home-soft-skills.webp` | Soft skills | Illustration of a small team collaborating around a whiteboard, in navy and cyan | "Flat vector illustration of three developers collaborating at a whiteboard, dark navy background, cyan accents, minimal, no text" |
+| `home-hero.webp` | Introduction | Portrait of Driss Elhail in a navy blazer and white T-shirt | "Flat vector illustration of a modern developer workspace, laptop showing code, dark navy background, cyan accents, minimal, no text" |
+| `home-soft-skills.webp` | Soft skills | Illustration of a small team collaborating around a whiteboard, in purple tones | "Flat vector illustration of three developers collaborating at a whiteboard, dark navy background, cyan accents, minimal, no text" |
 
 Generating tool: **ChatGPT** image generation (2026-11-03), also noted in a comment in `Home.jsx`. Both images are 1254×1254 WebP files used as generated.
 

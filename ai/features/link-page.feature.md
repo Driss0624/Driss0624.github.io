@@ -116,9 +116,9 @@ A link whose `url` is empty is left off the page rather than shown with a placeh
 
 | File | Card | `alt` (draft) | Suggested prompt |
 | --- | --- | --- | --- |
-| `links-github.webp` | GitHub | Illustration of code branches and commits flowing between laptops, in navy and cyan | "Flat vector illustration of code branches and commits connecting laptops, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
-| `links-linkedin.webp` | LinkedIn | Illustration of a professional profile card connected to a network of people, in navy and cyan | "Flat vector illustration of a professional profile card linked to a network of people icons, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
-| `links-youtube.webp` | YouTube | Illustration of a video player showing a developer presenting code, in navy and cyan | "Flat vector illustration of a video player with a developer presenting code on screen, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
+| `links-github.webp` | GitHub | Illustration of code branches and commits flowing between laptops, in purple tones | "Flat vector illustration of code branches and commits connecting laptops, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
+| `links-linkedin.webp` | LinkedIn | Illustration of a professional profile card connected to a network of people, in purple tones | "Flat vector illustration of a professional profile card linked to a network of people icons, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
+| `links-youtube.webp` | YouTube | Illustration of a video player showing a developer presenting code, in purple tones | "Flat vector illustration of a video player with a developer presenting code on screen, dark navy background, cyan accents, minimal, no text, no logos, 16:9" |
 
 Generating tool: **ChatGPT** image generation, noted in a comment in `Links.jsx`. Landscape 16:9 (1280×720), WebP, under 150 KB each. The prompts avoid brand logos so the images stay original.
 

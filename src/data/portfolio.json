@@ -41,14 +41,14 @@
     {
       "name": "CodeBloggs",
       "image": "codebloggs",
-      "imageAlt": "Illustration of a developer blogging platform with posts, comments, and likes, in navy and cyan",
+      "imageAlt": "Illustration of a developer blogging platform with posts, comments, and likes, in purple tones",
       "tech": ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "bcrypt"],
       "description": "A social blogging platform for developers, built as a team MERN application at CodeBoxx. Members register, write posts, comment, like, and browse the network, while admins manage users and content. I later audited its Login and Home pages with Lighthouse, refactored them based on the findings, and added Selenium IDE tests."
     },
     {
       "name": "Personal Portfolio",
       "image": "site",
-      "imageAlt": "Illustration of a personal portfolio website on a laptop and phone, in navy and cyan",
+      "imageAlt": "Illustration of a personal portfolio website on a laptop and phone, in purple tones",
       "tech": ["React", "Vite", "React Router", "Supabase", "GitHub Actions"],
       "description": "This website. It presents my skills, experience, and projects to employers. Visitors can send me a message that is stored in Supabase, a hidden admin area lets me read it, and GitHub Actions deploys every update to GitHub Pages.",
       "link": "https://github.com/Driss0624/Driss0624.github.io",

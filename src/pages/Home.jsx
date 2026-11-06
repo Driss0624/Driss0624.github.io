@@ -21,7 +21,7 @@ function Home() {
         <figure className="home-figure">
           <img
             src={heroImage}
-            alt="Illustration of a developer's desk with code on a laptop screen, in navy and cyan"
+            alt="Portrait of Driss Elhail in a navy blazer and white T-shirt"
             width="1254"
             height="1254"
           />
@@ -47,7 +47,7 @@ function Home() {
           <figure className="home-figure">
             <img
               src={softSkillsImage}
-              alt="Illustration of three developers collaborating at a whiteboard, in navy and cyan"
+              alt="Illustration of three developers collaborating at a whiteboard, in purple tones"
               width="1254"
               height="1254"
               loading="lazy"
