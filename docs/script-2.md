@@ -1,10 +1,10 @@
 # Elevator Pitch Script #2
 
-I build software the way I worked the line at Tropical Smoothie Café: fast, accurate, and not done until it's right.
+I build software the way Ive worked any job ive ever had, fast, accurate, and not done until it's right.
 
 I'm Driss Elhail, a full-stack developer finishing the CodeBoxx program this November.
 
-On CodeBloggs, a team-built social platform for developers, the job didn't end when the features worked. I audited the Login and Home pages with Lighthouse, refactored them based on what I found, and added Selenium tests.
+My favorite project ive worked on is CodeBloggs, a team-built social platform for developers, the job didn't end when the features worked. I audited the Login and Home pages with Lighthouse, refactored them based on what I found, and added Selenium tests.
 
 Then I built my own portfolio with React and Supabase, complete with a protected admin area and automatic deployment.
 
