@@ -5,8 +5,6 @@ A personal portfolio website that presents my skills, education, experience, and
 - **Live site:** https://driss0624.github.io
 - **Module:** CodeBoxx FSD-1616 Professional Development (Module 16)
 
-> This README grows with the project. Sections marked *(in progress)* are completed as each feature is built.
-
 ## Tech Stack
 
 | Area | Technology |
@@ -28,14 +26,22 @@ There is no custom server. The browser talks to Supabase directly, and row-level
 ├── ai/
 │   ├── ai-spec.md                 # Project-wide AI specification
 │   └── features/                  # One specification per feature
-├── public/                        # Files served as-is (favicon)
+├── public/                        # Files served as-is (favicon, resume.pdf)
 ├── src/
+│   ├── assets/images/             # AI-generated logo and images
+│   ├── components/                # Page pieces, ProtectedRoute, message table and modal
+│   │   └── layout/                # MainLayout, Header (with mobile nav), Footer
+│   ├── data/                      # Static content as JSON (contact details, ...)
 │   ├── lib/supabaseClient.js      # The only Supabase client
 │   ├── pages/                     # One component per route
-│   ├── App.jsx                    # Route table
+│   ├── styles/tokens.css          # Shared colors, spacing, and font
+│   ├── App.jsx                    # Route table, wrapped in MainLayout
 │   ├── main.jsx                   # Entry point; wraps the app in HashRouter
 │   └── index.css                  # Base styles
+├── docs/                          # Elevator pitch scripts and feedback
+├── LeetCode-Challenges/           # Screenshots of the five solved challenges
 ├── .env.example                   # Names of the required environment variables
+├── CONCEPTS.md                    # Three challenging concepts from this project
 ├── index.html
 └── vite.config.js                 # base: '/' for the root GitHub Pages site
 ```
@@ -48,7 +54,7 @@ There is no custom server. The browser talks to Supabase directly, and row-level
 | `#/portfolio` | Portfolio | Public |
 | `#/links` | Links | Public |
 | `#/contact` | Contact | Public |
-| `#/login` | Login | Hidden (typed URL only) |
+| `#/login` | Login | Hidden (typed URL or Ctrl+Shift+L) |
 | `#/backoffice` | Back Office | Signed-in admin only |
 
 Any other route redirects to Home. Because the app uses `HashRouter`, the browser path always stays at the domain root and refreshing any page never returns a 404.
@@ -109,11 +115,19 @@ The site has no API of its own. It uses the Supabase client library against one 
 | Read messages | Signed-in admin | `select` from `messages` | Select policy for `authenticated` |
 | Delete a message | Signed-in admin | `delete` from `messages` | Delete policy for `authenticated` |
 
-*(in progress: exact calls are documented as the Contact, Login, and Back Office features are built)*
-
 ## Author
 
 **Driss Elhail**
 
 - GitHub: [Driss0624](https://github.com/Driss0624)
-- LinkedIn: *(in progress: profile link and a summary of the profile updates)*
+- Email: [drisselhail08@gmail.com](mailto:drisselhail08@gmail.com)
+- LinkedIn: [drisselhail](https://www.linkedin.com/in/drisselhail/)
+
+### LinkedIn Update
+
+For Module 16, I updated my LinkedIn profile to present myself as a junior full-stack developer entering the job market:
+
+- **Headline and About:** named my target role and main technologies, and rewrote the About section with examples from CodeBloggs and this portfolio.
+- **Education and work:** corrected my CodeBoxx and Lennard High School entries, updated my Cook position at Tropical Smoothie Cafe, and removed an inaccurate entry and a duplicate one.
+- **Projects and skills:** added CodeBloggs and this portfolio, added my GitHub and portfolio to Featured, and linked my skills to those projects.
+- **Profile details:** added a custom banner, expanded my job preferences, and replaced the generated address with a custom URL.

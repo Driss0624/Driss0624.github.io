@@ -1,0 +1,116 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-form__field label {
+  font-weight: 600;
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: calc(var(--radius) / 2);
+  font: inherit;
+  transition: border-color 0.15s;
+}
+
+.contact-form__field textarea {
+  resize: vertical;
+}
+
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.contact-form__field [aria-invalid='true'] {
+  border-color: var(--color-danger);
+}
+
+.contact-form__field input:disabled,
+.contact-form__field textarea:disabled {
+  opacity: 0.6;
+}
+
+.contact-form__error,
+.contact-form__summary {
+  margin: 0;
+  color: var(--color-danger);
+  font-size: 0.9375rem;
+}
+
+.contact-form__summary {
+  font-weight: 600;
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-accent);
+  color: var(--color-bg);
+  border: 0;
+  border-radius: var(--radius);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.contact-form__submit:hover {
+  opacity: 0.85;
+}
+
+.contact-form__submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.contact-feedback {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin: 0;
+  padding: var(--space-3);
+  border: 1px solid currentColor;
+  border-radius: calc(var(--radius) / 2);
+  font-weight: 600;
+}
+
+.contact-feedback svg {
+  flex-shrink: 0;
+  margin-top: 0.2em;
+}
+
+.contact-feedback a {
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+.contact-feedback--success {
+  color: var(--color-success);
+  background: var(--color-success-soft);
+}
+
+.contact-feedback--failure {
+  color: var(--color-danger);
+  background: var(--color-danger-soft);
+}
+
+@media (max-width: 768px) {
+  .contact-form__submit {
+    align-self: stretch;
+  }
+}

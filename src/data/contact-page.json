@@ -1,0 +1,15 @@
+{
+  "title": "Contact",
+  "intro": "Have a role, a project, or a question? Send me a message and I'll reply by email.",
+  "emailPrompt": "Prefer email? Write to me at",
+  "labels": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "submit": "Send message",
+  "sending": "Sending…",
+  "success": "Message sent! I'll get back to you soon.",
+  "failure": "Something went wrong. Please try again, or email me at",
+  "unavailable": "The contact form is unavailable right now. Please email me at"
+}

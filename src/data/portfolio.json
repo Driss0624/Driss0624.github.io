@@ -1,0 +1,58 @@
+{
+  "intro": "My education, work experience, and the projects I've built. Download the PDF for a copy of my résumé.",
+  "resume": {
+    "file": "resume.pdf",
+    "downloadName": "Driss-Elhail-Resume.pdf",
+    "label": "Download résumé (PDF)"
+  },
+  "education": [
+    {
+      "title": "Full-Stack Developer Program",
+      "organization": "CodeBoxx",
+      "location": "Hybrid",
+      "dates": "Jul 2026 – Nov 2026 (expected)",
+      "details": [
+        "Intensive bootcamp in JavaScript, React, Node.js and Express, MongoDB, PostgreSQL, Git, and DevOps, through team and individual projects."
+      ]
+    },
+    {
+      "title": "High School Diploma, Honors",
+      "organization": "Lennard High School",
+      "location": "Ruskin, FL",
+      "dates": "2026",
+      "details": ["Honors student, GPA 4.5."]
+    }
+  ],
+  "work": [
+    {
+      "title": "Cook",
+      "organization": "Tropical Smoothie Café",
+      "location": "Ruskin, FL",
+      "dates": "2025 – 2026",
+      "details": [
+        "Prepared food orders quickly and accurately in a fast-paced environment.",
+        "Followed food safety and cleanliness standards on every shift.",
+        "Handled prep work, including ingredient preparation and organization.",
+        "Worked with the team to keep daily operations running smoothly."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "CodeBloggs",
+      "image": "codebloggs",
+      "imageAlt": "Illustration of a developer blogging platform with posts, comments, and likes, in purple tones",
+      "tech": ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "bcrypt"],
+      "description": "A social blogging platform for developers, built as a team MERN application at CodeBoxx. Members register, write posts, comment, like, and browse the network, while admins manage users and content. I later audited its Login and Home pages with Lighthouse, refactored them based on the findings, and added Selenium IDE tests."
+    },
+    {
+      "name": "Personal Portfolio",
+      "image": "site",
+      "imageAlt": "Illustration of a personal portfolio website on a laptop and phone, in purple tones",
+      "tech": ["React", "Vite", "React Router", "Supabase", "GitHub Actions"],
+      "description": "This website. It presents my skills, experience, and projects to employers. Visitors can send me a message that is stored in Supabase, a hidden admin area lets me read it, and GitHub Actions deploys every update to GitHub Pages.",
+      "link": "https://github.com/Driss0624/Driss0624.github.io",
+      "linkLabel": "View the code on GitHub"
+    }
+  ]
+}
