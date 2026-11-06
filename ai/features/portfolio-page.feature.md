@@ -146,8 +146,8 @@ A project without a `link` renders without a link rather than an empty or broken
 
 | File | Used in | `alt` (draft) | Suggested prompt |
 | --- | --- | --- | --- |
-| `portfolio-codebloggs.webp` | CodeBloggs card | Illustration of a developer blogging platform with posts, comments, and likes, in navy and cyan | "Flat vector illustration of a social blogging app for developers: post cards, comment bubbles, heart icons, dark navy background, cyan accents, minimal, no text, 16:9" |
-| `portfolio-site.webp` | Portfolio card | Illustration of a personal portfolio website on a laptop and phone, in navy and cyan | "Flat vector illustration of a personal portfolio website shown on a laptop and a phone, dark navy background, cyan accents, minimal, no text, 16:9" |
+| `portfolio-codebloggs.webp` | CodeBloggs card | Illustration of a developer blogging platform with posts, comments, and likes, in purple tones | "Flat vector illustration of a social blogging app for developers: post cards, comment bubbles, heart icons, dark navy background, cyan accents, minimal, no text, 16:9" |
+| `portfolio-site.webp` | Portfolio card | Illustration of a personal portfolio website on a laptop and phone, in purple tones | "Flat vector illustration of a personal portfolio website shown on a laptop and a phone, dark navy background, cyan accents, minimal, no text, 16:9" |
 
 Generating tool: **ChatGPT** image generation (same as Home), noted in a comment in `Portfolio.jsx`. Images are landscape 16:9 (1280×720), WebP, under 150 KB each.
 

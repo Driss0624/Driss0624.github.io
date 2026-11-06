@@ -150,11 +150,11 @@ No other entries. Both navigations render from this one list, so they cannot dri
 
 | Token | Purpose | Starting value |
 | --- | --- | --- |
-| `--color-bg` | Page background | dark navy (`#0b1220`) |
-| `--color-surface` | Header, footer, mobile bar | slightly lighter navy (`#121a2b`) |
-| `--color-text` | Body text | near white (`#e6edf7`) |
-| `--color-muted` | Secondary text | grey-blue (`#9aa7bd`) |
-| `--color-accent` | Links, active state, focus | bright cyan (`#22d3ee`) |
+| `--color-bg` | Page background | pale slate (`#c8c6d7`) |
+| `--color-surface` | Header, footer, mobile bar | thistle cards (`#bfacc8`); indigo (`#4f1271`) in header, footer, mobile bar |
+| `--color-text` | Body text | indigo (`#4f1271`); white in header, footer, mobile bar |
+| `--color-muted` | Secondary text | vintage grape (`#4a4063`); pale slate in header, footer, mobile bar |
+| `--color-accent` | Links, active state, focus | indigo (`#4f1271`); white in header, footer, mobile bar |
 | `--font-sans` | All text | `Inter`, then system sans-serif |
 | `--header-height`, `--mobilenav-height` | Layout offsets | about 64px each |
 
