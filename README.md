@@ -39,6 +39,7 @@ There is no custom server. The browser talks to Supabase directly, and row-level
 │   ├── main.jsx                   # Entry point; wraps the app in HashRouter
 │   └── index.css                  # Base styles
 ├── docs/                          # Elevator pitch scripts and feedback
+├── LeetCode-Challenges/           # Screenshots of the five solved challenges
 ├── .env.example                   # Names of the required environment variables
 ├── CONCEPTS.md                    # Three challenging concepts from this project
 ├── index.html
