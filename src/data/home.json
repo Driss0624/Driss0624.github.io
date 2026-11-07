@@ -2,7 +2,10 @@
   "intro": {
     "name": "Driss Elhail",
     "tagline": "Full-Stack Developer",
-    "paragraph": "I'm a full-stack developer who trained at CodeBoxx, building web applications from the database to the interface. I helped build CodeBloggs, a team MERN application, and built this portfolio with React, Supabase, and GitHub Actions. I like turning messy problems into clean, working features, and I'm looking for my first developer role where I can keep learning and ship real work."
+    "paragraphs": [
+      "I’m Driss Elhail, a full-stack developer trained at CodeBoxx. I enjoy turning complex, messy problems into clear, practical solutions that people can use. I work across the stack, from designing databases and building APIs to creating responsive user interfaces.",
+      "I contributed to CodeBloggs, a team-built MERN application, and developed this portfolio using React, Supabase, and GitHub Actions. I’m seeking a full-stack developer role where I can contribute to a collaborative team, continue learning from experienced developers, and ship features that solve real problems."
+    ]
   },
   "technicalSkills": [
     {
