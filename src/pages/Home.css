@@ -49,6 +49,10 @@
   font-size: 1.0625rem;
 }
 
+.home-intro__paragraph + .home-intro__paragraph {
+  margin-top: var(--space-3);
+}
+
 .home-figure {
   margin: 0;
 }
