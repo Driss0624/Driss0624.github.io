@@ -16,7 +16,11 @@ function Home() {
             {intro.name}
           </h1>
           <p className="home-intro__tagline">{intro.tagline}</p>
-          <p className="home-intro__paragraph">{intro.paragraph}</p>
+          {intro.paragraphs.map((paragraph) => (
+            <p key={paragraph} className="home-intro__paragraph">
+              {paragraph}
+            </p>
+          ))}
         </div>
         <figure className="home-figure">
           <img
